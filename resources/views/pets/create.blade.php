@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Add Pet</title>
-</head>
-<body>
+
     <h1>Add Pet</h1>
     <form action="{{ route('pets.store')}}" method="POST">
         @csrf
@@ -21,5 +16,3 @@
         </select>
         <button type="submit">Add Pet</button>
     </form>
-</body>
-</html>

@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Edit Pet</title>
-</head>
+
 <body>
     <h1>Edit Pet</h1>
+
     <form action="{{ route('pets.update', $pet['id'])}}" method="POST">
         @csrf
         @method('PUT')
@@ -21,4 +18,3 @@
         <button type="submit">Update Pet</button>
     </form>
 </body>
-</html>
